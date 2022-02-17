@@ -1,0 +1,345 @@
+<!-- HELLO
+-
+DevFolio is a minimal, clean, lightweight and fully responsive template for Devlopers!
+Created by Anil Seervi.
+-
+GitHub repo: https://github.com/AnilSeervi/DevFolio
+README: https://github.com/AnilSeervi/DevFolio/blob/master/README.md
+-
+Have fun creating your portfolio on this template!!! -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Title: add your Portfolio website's title here -->
+    <title>Project: Understanding Expiration Date</title>
+
+    <!-- Add some coding keywords below, Ex: (javascript, yourusername, etc) -->
+    <meta name="keywords" content="[username], [name], skill" />
+
+    <!-- Improve your SEO by adding a small description of you -->
+    <meta name="description" content="[Your name here] | Developer" />
+
+    <!-- Add your png Logo to the assets folder and change the href attr accordingly  -->
+    <link rel="icon" type="image/png" href="../assets/icon.png" />
+
+    <!-- Add your primary-theme color for the value of content -->
+    <meta name="theme-color" content="#36d1dc" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <!-- Fill content with the URL of this portfolio you'll host -->
+    <meta property="og:url" content="https://devfolio.js.org/" />
+    <!-- Fill content with the title of your portfolio(Recommended to use what you put in <title> tag) -->
+    <meta property="og:title" content="[Your name here] | Developer" />
+    <!-- Give a short description that'll show up when you/someone shares your portfolio on different platform -->
+    <meta property="og:description" content="Made using DevFolio Template" />
+    <!-- Add a thumbnail image in assets folder and fill the content attr with URL to that thumbnail
+      so that a thumbnail image of your portfolio is shown while shared on other platform -->
+    <meta
+      property="og:image"
+      content="https://devfolio.js.org/assets/devfolio.png"
+    />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <!-- Again fill content attr with the URL of this portfolio you'll host -->
+    <meta property="twitter:url" content="https://devfolio.js.org" />
+    <!-- Recommended to use the same text used within <title> element -->
+    <meta property="twitter:title" content="[Your name here] | Developer" />
+    <!-- short description that shows up while your portfolio is shared -->
+    <meta
+      property="twitter:description"
+      content="Made using DevFolio Template"
+    />
+    <!-- Fill content with the URL to the thumbnail image that you'll put in the assets folder -->
+    <meta
+      property="twitter:image"
+      content="https://anilseervi.vercel.app/assets/devfolio.png"
+    />
+
+    <!-- link tags -->
+    <link rel="stylesheet" href="../css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="./javascript/scrollreveal.min.js"></script>
+    <script
+      defer
+      type="text/javascript"
+      src="./javascript/scrollveal.js"
+    ></script>
+
+    <!-- Remove Google Analytics once you have your portfolio website set-up -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-122228201-4"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-122228201-4");
+    </script>
+    <!-- End of Google Analytics -->
+  </head>
+
+  <body>
+    <!-- Top Navigation Bar Section -->
+    <div id="navbar">
+      <a href="#hero">
+        <img src="../assets/icon.png" height="30px" alt="Icon Image">
+      </a>
+      <div class="navbar-text">
+        <a href="../index.html">Home</a>
+        <a href="#projects">Project</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+    <!-- /END Top Navigation Bar Section -->
+
+        <!-- Hero Section -->
+    <div id="hero">
+      <section class="container">
+        <h1 class="hero-title">
+          Hi! <br> I'm Ahmet Cagatay Seker
+        </h1>
+
+        <h1 class="hero-subtitle">
+           Ph.D. Candidate | Junior ML Developer | Research Assistant
+        </h1>
+        <br>
+
+        <div class="social-links">
+          <a
+            href="mailto:acseker07@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="email"
+          >
+            <span class="fa-stack" style="vertical-align: top;">
+              <i class="fa fa-circle fa-stack-2x" style="color:#ea4335"></i>
+              <i class="fa fa-envelope fa-stack-1x"></i>
+            </span>
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/acseker/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="linkedin"
+          >
+            <span class="fa-stack" style="vertical-align: top;">
+              <i class="fa fa-circle fa-stack-2x" style="color:#4875b4"></i>
+              <i class="fa fa-linkedin fa-stack-1x"></i>
+            </span>
+          </a>
+
+          <a
+            href="https://github.com/acseker"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="github"
+          >
+            <span class="fa-stack" style="vertical-align: top;">
+              <i class="fa fa-circle fa-stack-2x" style="color:#000"></i>
+              <i class="fa fa-github fa-stack-1x"></i>
+            </span>
+          </a>
+        </div>
+      </section>
+
+      <a href="#about" class="scroll-down-link" aria-label="scroll-down">
+        <div class="scroll-down"></div>
+      </a>
+    </div>
+    <!-- /END Hero Section -->
+
+    <!-- Projects Section-->
+    <section id="projects">
+      <div class="container">
+        <div class="project-wrapper">
+          <h2 class="section-title dark-blue-text">Understanding Expiration Date</h2>
+
+          <article class="row">
+            <div class="project-wrapper__text">
+              <p class="project-wrapper__text-info">
+                This study proposes a generalized framework for detecting and understanding product expiration dates.
+                Figure 1 shows the overall architecture of the proposed framework.
+                The proposed framework consists of three networks:
+                Date detection, DMY detection, and Recognition networks, sequentially.
+                <br><br>
+                Given an input image, the date detection network detects the dates
+                and extracts their regions from the entire input image.
+                Then, the DMY detection network identifies and extracts the day, month, and
+                year components from the detected date regions.
+                Later, the recognition network recognizes the characters of the day, month, and year components.
+                Finally, the appropriate date is selected as an expiration date after the recognition of characters.
+                <br><br>
+                The proposed framework can handle challenging expiration date cases and distinguish
+                13 different date formats.
+                It can detect and understand the expiration dates even when the input image contains multiple dates.
+              </p>
+            </div>
+
+            <div class="project-wrapper__image">
+              <div class="thumbnail rounded">
+                <img src="../assets/p1_fig_1.jpg" class="img-fluid" alt="Project Image"/>
+              </div>
+
+              <br><br><br><br><br><br>
+
+              <div class="thumbnail rounded">
+                <img src="../assets/p1_fig_2.jpg" class="img-fluid" alt="Project Image"/>
+              </div>
+            </div>
+
+            <div class="project-wrapper__text-btns">
+              <a
+              href="https://youtu.be/5BLq-Qf37YA"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="cta-btn cta-btn--hero cta-btn--projects"
+              >See Video</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+    <!-- END Projects Section-->
+
+    <!-- Skills Section -->
+    <section id="skills">
+      <div class="container">
+        <div class="skills-wrapper">
+          <h2 class="section-title dark-blue-text">Tools</h2>
+            <div class="skills-wrapper__text">
+              <div style="padding-left:25px">
+                <img src="../assets/python.png" height="64px"/>
+                <h6>Python</h6>
+              </div>
+              <div style="padding-left:25px">
+                <img src="../assets/pytorch.png" height="64px"/>
+                <h6>PyTorch</h6>
+              </div>
+              <div style="padding-left:25px">
+                <img src="../assets/opencv.png" height="64px"/>
+                <h6>OpenCV</h6>
+              </div>              
+            </div>
+          </div>
+        </div>
+    </section>
+    <!-- /END Skill Section -->
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <div class="container">
+        <h2 class="section-title">Contact</h2>
+        <div class="contact-wrapper">
+        <div id="contact-form">
+          <form method="POST" action="https://formspree.io/acseker07@gmail.com">
+              <input type="hidden" name="_subject" value="Contact request from personal website">
+              <input type="email" name="_replyto" placeholder="Your email" required="">
+              <textarea name="message" placeholder="Your message" required="" data-gramm="false" wt-ignore-input="true"></textarea>
+              <button class="cta-btn cta-btn--resume" type="submit">Submit</button>
+          </form>
+        </div>
+        </div>
+      </div>
+    </section>
+    <!-- END Contact Section -->
+
+    <!-- Footer Section -->
+    <footer class="footer">
+      <div class="container">
+        <a href="#hero" class="back-to-top" aria-label="go back to top">
+          <i class="fa fa-angle-up fa-2x" aria-hidden="true"></i>
+        </a>
+        <div class="social-links">
+          <a
+            href="mailto:acseker07@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="email"
+          >
+            <span class="fa-stack" style="vertical-align: top;">
+              <i class="fa fa-circle fa-stack-2x" style="color:#ea4335"></i>
+              <i class="fa fa-envelope fa-stack-1x"></i>
+            </span>
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/acseker/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="linkedin"
+          >
+          <span class="fa-stack" style="vertical-align: top;">
+              <i class="fa fa-circle fa-stack-2x" style="color:#4875b4"></i>
+              <i class="fa fa-linkedin fa-stack-1x"></i>
+            </span>
+          </a>
+
+          <a
+            href="https://github.com/acseker"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="github"
+          >
+            <span class="fa-stack" style="vertical-align: top;">
+              <i class="fa fa-circle fa-stack-2x" style="color:#000"></i>
+              <i class="fa fa-github fa-stack-1x"></i>
+            </span>
+          </a>
+        </div>
+        <hr />
+        <p class="footer__text">
+          &copy; <span id="year"></span> - Template by
+          <a
+            href="https://github.com/AnilSeervi"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Anil Seervi</a>.
+          <br/>Modified by
+          <a
+            href="https://github.com/acseker"
+            target="_blank"
+            rel="noopener noreferrer"
+          >Ahmet Cagatay Seker</a>.
+        </p>
+      </div>
+    </footer>
+    <!-- END Footer Section -->
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+    <script src="./javascript/vanilla-tilt.min.js"></script>
+    <script type="text/javascript" src="./javascript/valtilt.js"></script>
+
+    <!-- Top navigation bar-->
+    <script>
+      // When the user scrolls down 20px from the top of the document, slide down the navbar
+      // When the user scrolls to the top of the page, slide up the navbar (50px out of the top view)
+      window.onscroll = function() {scrollFunction()};
+
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          document.getElementById("navbar").style.top = "0";
+        } else {
+          document.getElementById("navbar").style.top = "-50px";
+        }
+      }
+    </script>
+  </body>
+</html>

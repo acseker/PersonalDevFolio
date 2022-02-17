@@ -1,0 +1,538 @@
+<!-- HELLO
+-
+DevFolio is a minimal, clean, lightweight and fully responsive template for Devlopers!
+Created by Anil Seervi.
+-
+GitHub repo: https://github.com/AnilSeervi/DevFolio
+README: https://github.com/AnilSeervi/DevFolio/blob/master/README.md
+-
+Have fun creating your portfolio on this template!!! -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Title: add your Portfolio website's title here -->
+    <title>Ahmet Cagatay Seker | Portfolio</title>
+
+    <!-- Add some coding keywords below, Ex: (javascript, yourusername, etc) -->
+    <meta name="keywords" content="[username], [name], skill" />
+
+    <!-- Improve your SEO by adding a small description of you -->
+    <meta name="description" content="[Your name here] | Developer" />
+
+    <!-- Add your png Logo to the assets folder and change the href attr accordingly  -->
+    <link rel="icon" type="image/png" href="./assets/icon.png" />
+
+    <!-- Add your primary-theme color for the value of content -->
+    <meta name="theme-color" content="#36d1dc" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <!-- Fill content with the URL of this portfolio you'll host -->
+    <meta property="og:url" content="https://devfolio.js.org/" />
+    <!-- Fill content with the title of your portfolio(Recommended to use what you put in <title> tag) -->
+    <meta property="og:title" content="[Your name here] | Developer" />
+    <!-- Give a short description that'll show up when you/someone shares your portfolio on different platform -->
+    <meta property="og:description" content="Made using DevFolio Template" />
+    <!-- Add a thumbnail image in assets folder and fill the content attr with URL to that thumbnail 
+      so that a thumbnail image of your portfolio is shown while shared on other platform -->
+    <meta
+      property="og:image"
+      content="https://devfolio.js.org/assets/devfolio.png"
+    />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <!-- Again fill content attr with the URL of this portfolio you'll host -->
+    <meta property="twitter:url" content="https://devfolio.js.org" />
+    <!-- Recommended to use the same text used within <title> element -->
+    <meta property="twitter:title" content="[Your name here] | Developer" />
+    <!-- short description that shows up while your portfolio is shared -->
+    <meta
+      property="twitter:description"
+      content="Made using DevFolio Template"
+    />
+    <!-- Fill content with the URL to the thumbnail image that you'll put in the assets folder -->
+    <meta
+      property="twitter:image"
+      content="https://anilseervi.vercel.app/assets/devfolio.png"
+    />
+
+    <!-- link tags -->
+    <link rel="stylesheet" href="./css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="./javascript/scrollreveal.min.js"></script>
+    <script
+      defer
+      type="text/javascript"
+      src="./javascript/scrollveal.js"
+    ></script>
+
+    <!-- Remove Google Analytics once you have your portfolio website set-up -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-122228201-4"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-122228201-4");
+    </script>
+    <!-- End of Google Analytics -->
+  </head>
+
+  <body>
+    <!-- Top Navigation Bar Section -->
+    <div id="navbar">
+      <a href="#hero">
+        <img src="./assets/icon.png" height="30px" alt="Icon Image">
+      </a>
+      <div class="navbar-text">
+        <a href="#hero">Home</a>
+        <a href="#about">About Me</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#awards">Awards</a>
+        <a href="#publications">Publications</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+    <!-- /END Top Navigation Bar Section -->
+
+    <!-- Hero Section -->
+    <div id="hero">
+      <section class="container">
+        <h1 class="hero-title">
+          Hi! <br> I'm Ahmet Cagatay Seker
+        </h1>
+
+        <h1 class="hero-subtitle">
+           Ph.D. Candidate | Junior ML Developer | Research Assistant
+        </h1>
+        <br>
+
+        <div class="social-links">
+          <a
+            href="mailto:acseker07@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="email"
+          >
+            <span class="fa-stack" style="vertical-align: top;">
+              <i class="fa fa-circle fa-stack-2x" style="color:#ea4335"></i>
+              <i class="fa fa-envelope fa-stack-1x"></i>
+            </span>
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/acseker/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="linkedin"
+          >
+            <span class="fa-stack" style="vertical-align: top;">
+              <i class="fa fa-circle fa-stack-2x" style="color:#4875b4"></i>
+              <i class="fa fa-linkedin fa-stack-1x"></i>
+            </span>
+          </a>
+
+          <a
+            href="https://github.com/acseker"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="github"
+          >
+            <span class="fa-stack" style="vertical-align: top;">
+              <i class="fa fa-circle fa-stack-2x" style="color:#000"></i>
+              <i class="fa fa-github fa-stack-1x"></i>
+            </span>
+          </a>
+        </div>
+      </section>
+
+      <a href="#about" class="scroll-down-link" aria-label="scroll-down">
+        <div class="scroll-down"></div>
+      </a>
+    </div>
+    <!-- /END Hero Section -->
+
+    <!-- About Section -->
+    <section id="about">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="row about-wrapper">
+          <div class="about-wrapper__image">
+            <img
+              style="border-radius: 50%"
+              class="img-fluid"
+              src="./assets/profile.png"
+              alt="Profile Image"
+            />
+          </div>
+          <div class="about-wrapper__info">
+            <p class="about-wrapper__info-text">
+              Hi. I'm Ahmet Cagatay Seker and currently a Ph.D. candidate at University of Science and Technology (UST).
+              Also, I'm working as a research assistant at Korea Institute of Science and Technology (KIST)
+              in Seoul, South Korea.
+              My research area is rendering a novel view of the human head from images.
+            </p>
+            <span class="about-wrapper__cta">
+              <a href="#" class="cta-btn cta-btn--resume">View Resume</a>
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /END About Section -->
+
+    <!-- Skills Section -->
+    <section id="skills">
+      <div class="container">
+        <div class="skills-wrapper">
+          <h2 class="section-title dark-blue-text">Skills</h2>
+            <div class="skills-wrapper__text">
+              <div style="padding-left:25px">
+                <img src="./assets/python.png" height="64px"/>
+                <h6>Python</h6>
+              </div>
+              <div style="padding-left:25px">
+                <img src="./assets/c++.png" height="64px"/>
+                <h6>C++</h6>
+              </div>
+              <div style="padding-left:25px">
+                <img src="./assets/html.png" height="64px"/>
+                <h6>HTML</h6>
+              </div>
+              <div style="padding-left:25px">
+                <img src="./assets/css.png" height="64px"/>
+                <h6>CSS</h6>
+              </div>
+              <div style="padding-left:25px">
+                <img src="./assets/pytorch.png" height="64px"/>
+                <h6>PyTorch</h6>
+              </div>
+              <div style="padding-left:25px">
+                <img src="./assets/tensorflow.png" height="64px"/>
+                <h6>TensorFlow</h6>
+              </div>
+              <div style="padding-left:25px">
+                <img src="./assets/opencv.png" height="64px"/>
+                <h6>OpenCV</h6>
+              </div>
+              <div style="padding-left:25px">
+                <img src="./assets/numpy.png" height="64px"/>
+                <h6>Numpy</h6>
+              </div>
+            </div>
+            </div>
+        </div>
+    </section>
+    <!-- /END Skill Section -->
+
+    <!--Projects Section-->
+    <section id="projects">
+      <div class="container">
+        <div class="project-wrapper">
+          <h2 class="section-title dark-blue-text">Projects</h2>
+
+          <!-- Project-1 -->
+          <article class="row">
+            <div class="project-wrapper__text">
+              <h3 class="project-wrapper__text-title">Understanding Expiration Date</h3>
+              <p class="project-wrapper__text-info">
+                In this project, a CNN-based framework is developed, which can detect and understand expiration dates
+                on the products.
+                Given an input image, the framework first detects the dates and extracts their regions
+                from the entire input image.
+                Then, it identifies the day, month, and year components from the detected date regions.
+                Later, it recognizes the characters of the day, month, and year components.
+                Finally, the appropriate date is selected as an expiration date after the recognition of characters.
+              </p>
+
+              <div class="project-wrapper__text-btns">
+                <a
+                  href="./projects/project1.html"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="cta-btn cta-btn--hero cta-btn--projects"
+                  >See Details</a>
+              </div>
+            </div>
+
+            <div class="project-wrapper__image">
+              <a href="./projects/project1.html" target="_blank" rel="noopener noreferrer">
+                <div class="thumbnail rounded">
+                  <img
+                    src="./assets/project1.jpg"
+                    class="img-fluid"
+                    alt="Project Image"
+                  />
+                </div>
+              </a>
+            </div>
+          </article>
+          <!-- /END Project-1 -->
+
+          <!-- Project-2 -->
+          <article class="row">
+            <div class="project-wrapper__text">
+              <h3 class="project-wrapper__text-title">Animal Recognition Web Application</h3>
+              <p class="project-wrapper__text-info">
+                This project is an AI-based Web Application, which recognizes animals for a given image.
+              </p>
+
+              <div class="project-wrapper__text-btns">
+                <a
+                  href="./projects/project2.html"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="cta-btn cta-btn--hero cta-btn--projects"
+                  >See Live</a
+                >
+                <a href="./projects/project2.html" target="_blank" class="cta-btn text-color-main"
+                  >Source Code</a
+                >
+              </div>
+            </div>
+
+            <div class="project-wrapper__image">
+              <a href="./projects/project2.html" target="_blank" rel="noopener noreferrer">
+                <div class="thumbnail rounded">
+                  <img
+                    src="./assets/project2.jpg"
+                    class="img-fluid"
+                    alt="Project Image"
+                  />
+                </div>
+              </a>
+            </div>
+          </article>
+          <!-- /END Project-2 -->
+
+          <!-- Project-3 -->
+          <article class="row">
+            <div class="project-wrapper__text">
+              <h3 class="project-wrapper__text-title">Fruit Recognition Android Application</h3>
+              <p class="project-wrapper__text-info">
+                AI-based Android application which can recognize different fruit in real time.
+              </p>
+              <div class="project-wrapper__text-btns">
+                <a
+                  href="./projects/project3.html"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="cta-btn cta-btn--hero cta-btn--projects"
+                  >See Live</a
+                >
+                <a href="./projects/project3.html" target="_blank" class="cta-btn text-color-main"
+                  >Source Code</a
+                >
+              </div>
+            </div>
+
+            <div class="project-wrapper__image">
+              <a href="./projects/project3.html" target="_blank" rel="noopener noreferrer">
+                <div class="thumbnail rounded">
+                  <img
+                    src="./assets/project3.jpg"
+                    class="img-fluid"
+                    alt="Project Image"
+                  />
+                </div>
+              </a>
+            </div>
+          </article>
+          <!-- /END Project-3 -->
+
+          <!-- Project-4 -->
+          <article class="row">
+            <div class="project-wrapper__text">
+              <h3 class="project-wrapper__text-title">3-Floor Elevator Prototype</h3>
+              <p class="project-wrapper__text-info">
+                Implementing 3-floor elevator using Programmable Logic Controller (PLC).
+                This system is operated by a few components being DC motor, PLC, magnetic relay,
+                7-segment display, counterweight, pulley, etc.
+                The system is driven by PLC.
+                When the switch is turned on,
+                the motor is activated and the elevator starts going up and down or stops.
+
+              </p>
+              <div class="project-wrapper__text-btns">
+                <a
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="cta-btn cta-btn--hero cta-btn--projects"
+                  >See Live</a
+                >
+                <a href="#" target="_blank" class="cta-btn text-color-main"
+                  >Source Code</a
+                >
+              </div>
+            </div>
+
+            <div class="project-wrapper__image">
+              <a href="#" target="_blank" rel="noopener noreferrer">
+                <div class="thumbnail rounded">
+                  <img
+                    src="./assets/project.png"
+                    class="img-fluid"
+                    alt="Project Image"
+                  />
+                </div>
+              </a>
+            </div>
+          </article>
+          <!-- /END Project-4 -->
+        </div>
+      </div>
+    </section>
+    <!-- End Projects Section -->
+
+    <!-- Awards Section -->
+    <section id="awards">
+      <div class="container">
+        <div class="awards-wrapper">
+          <h2 class="section-title dark-blue-text">Awards</h2>
+          <div class="awards-wrapper__text">
+            <p class="awards-wrapper__text-info">
+              🏆 Graduated as the highest ranked student
+              in the Faculty of Engineering at Mevlana University in Jun 2015.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /END Awards Section -->
+
+    <!-- Publications Section -->
+    <section id="publications">
+      <div class="container">
+        <div class="publications-wrapper">
+          <h2 class="section-title dark-blue-text">Publications</h2>
+          <div class="publications-wrapper__text">
+            <p class="publications-wrapper__text-info">
+              📃 A Generalized Framework for Recognition of Expiration Date on Product Packages Using Fully Convolutional Networks
+              <br>
+              Seker, Ahmet Cagatay and Ahn, Sang Chul
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /END Publications Section -->
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <div class="container">
+        <h2 class="section-title">Contact</h2>
+        <div class="contact-wrapper">
+          <div id="contact-form">
+            <form method="POST" action="https://formspree.io/acseker07@gmail.com">
+                <input type="hidden" name="_subject" value="Contact request from personal website">
+                <input type="email" name="_replyto" placeholder="Your email" required="">
+                <textarea name="message" placeholder="Your message" required="" data-gramm="false" wt-ignore-input="true"></textarea>
+                <button class="cta-btn cta-btn--resume" type="submit">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END Contact Section -->
+
+    <!-- Footer Section -->
+    <footer class="footer">
+      <div class="container">
+        <a href="#hero" class="back-to-top" aria-label="go back to top">
+          <i class="fa fa-angle-up fa-2x" aria-hidden="true"></i>
+        </a>
+        <div class="social-links">
+          <a
+            href="mailto:acseker07@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="email"
+          >
+            <span class="fa-stack" style="vertical-align: top;">
+              <i class="fa fa-circle fa-stack-2x" style="color:#ea4335"></i>
+              <i class="fa fa-envelope fa-stack-1x"></i>
+            </span>
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/acseker/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="linkedin"
+          >
+          <span class="fa-stack" style="vertical-align: top;">
+              <i class="fa fa-circle fa-stack-2x" style="color:#4875b4"></i>
+              <i class="fa fa-linkedin fa-stack-1x"></i>
+            </span>
+          </a>
+
+          <a
+            href="https://github.com/acseker"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="github"
+          >
+            <span class="fa-stack" style="vertical-align: top;">
+              <i class="fa fa-circle fa-stack-2x" style="color:#000"></i>
+              <i class="fa fa-github fa-stack-1x"></i>
+            </span>
+          </a>
+        </div>
+        <hr />
+        <p class="footer__text">
+          &copy; <span id="year"></span> - Template by
+          <a
+            href="https://github.com/AnilSeervi"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Anil Seervi</a>.
+          <br/>Modified by
+          <a
+            href="https://github.com/acseker"
+            target="_blank"
+            rel="noopener noreferrer"
+          >Ahmet Cagatay Seker</a>.
+        </p>
+      </div>
+    </footer>
+    <!-- END Footer Section -->
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+    <script src="./javascript/vanilla-tilt.min.js"></script>
+    <script type="text/javascript" src="./javascript/valtilt.js"></script>
+
+    <!-- Top navigation bar-->
+    <script>
+      // When the user scrolls down 20px from the top of the document, slide down the navbar
+      // When the user scrolls to the top of the page, slide up the navbar (50px out of the top view)
+      window.onscroll = function() {scrollFunction()};
+
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          document.getElementById("navbar").style.top = "0";
+        } else {
+          document.getElementById("navbar").style.top = "-50px";
+        }
+      }
+    </script>
+  </body>
+</html>
