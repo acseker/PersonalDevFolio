@@ -58,6 +58,12 @@ a:hover {
     color: #272341
 }
 
+ul.a {
+  list-style-type: disc;
+  list-style-position: inside;
+  text-align: left;
+  font-size: 1.5rem;
+
 /* ---------------- TEXT COLOR MAIN ---------------- */
 .text-color-main {
     margin-left: 1rem;
@@ -1147,9 +1153,3 @@ section .row span {
 }
 /* ---------------- TOOLS END ---------------- */
 
-
-ul.a {
-  list-style-type: disc;
-  list-style-position: inside;
-  text-align: left;
-  font-size: 1.5rem;
