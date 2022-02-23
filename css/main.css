@@ -432,29 +432,36 @@ section .row span {
 /* ---------------- SCROLL DOWN END ---------------- */
 
 /* ---------------- NAVIGATION TOP BAR ---------------- */
-#navbar {
-  height: 7vh;  /* Adjust navbar height */
-  width: 100%; /* Full width */
-  background-color: #333; /* Black background color */
+#bar {
   position: fixed; /* Make it stick/fixed */
   top: -50px; /* Hide the navbar 50 px outside of the top view */
+  width: 100%; /* Full width */
   transition: top 0.3s; /* Transition effect when sliding down (and up) */
-  z-index: 999; /* to see navbar in front of everything*/
+  z-index: 999;
 }
 
-#navbar a {
+/* Navbar container */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  font-family: Arial;
+  }
+
+/* Links inside the navbar */
+.navbar a {
   float: left;
-  display: block;
+  font-size: 16px;
   color: white;
   text-align: center;
-  padding: 10px 10px 15px 10px;
+  padding: 10px;
   text-decoration: none;
 }
 
-.navbar-text {
+.navbar-titles {
   display : flex;
   justify-content: center;
 }
+
 /* The dropdown container */
 .dropdown {
   float: left;
@@ -462,25 +469,20 @@ section .row span {
 }
 
 /* Dropdown button */
-.dropdown {
+.dropdown .dropbtn {
+  font-size: 16px;
   border: none;
   outline: none;
   color: white;
+  padding: 14px 16px;
   background-color: inherit;
   font-family: inherit; /* Important for vertical align on mobile phones */
   margin: 0; /* Important for vertical align on mobile phones */
 }
 
-.dropbtn {
-  color: white;
-  background-color: inherit;
-  font-family: inherit;
-  border: none;
-}
-
-/* Add a white background color to navbar links on hover */
-#navbar a:hover, .dropdown:hover {
-  color:black;
+/* Add a red background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+  color: black;
   background-color: white;
 }
 
@@ -488,10 +490,9 @@ section .row span {
 .dropdown-content {
   display: none;
   position: absolute;
+  color: white;
   background-color: #333;
-  margin-top: 50px;
   min-width: 160px;
-  max-width: 350px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
@@ -500,6 +501,7 @@ section .row span {
 .dropdown-content a {
   float: none;
   color: white;
+  padding: 12px 16px;
   text-decoration: none;
   display: block;
   text-align: left;
@@ -507,8 +509,8 @@ section .row span {
 
 /* Add a grey background color to dropdown links on hover */
 .dropdown-content a:hover {
+  color: black;
   background-color: white;
-  color:black;
 }
 
 /* Show the dropdown menu on hover */
