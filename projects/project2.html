@@ -135,35 +135,59 @@
     <section id="projects">
       <div class="container">
         <div class="project-wrapper">
-          <h2 class="section-title-project dark-blue-text"></h2>
+          <h2 class="section-title-project dark-blue-text">Introduction</h2>
 
           <article class="row">
             <div class="project-wrapper__text">
               <p class="project-wrapper__text-info">
-                This project is implementing a web application for AI based animal recognition.
-                The goal is to recognize the animal in the uploaded images on the website.
-                Given an input image on the website, the system sends the uploaded image the trained CNN on the local machine.
+                This project is implementing an AI-based web application of animal recognition
+                for uploaded images.
+                The system contains three steps: designing a website, training a Convolutional
+                Neural Network (CNN) network, and making connections between the website and
+                trained CNN.
+                <br><br>
+                First, a basic website is designed, containing 16 different animal images
+                to inform the user about the used animal classes.
+                There are also two buttons for uploading images and making prediction.
+                Then, a CNN is trained with the dataset that contains 16 different animal images.
+                Finally, the trained CNN and the designed website are connected to each other
+                to transfer the uploaded images.
+                <br><br>
+                The application runs as in the following:
+              <ul class="a">
+                  <li>The user uploads an image to the website.</li>
+                  <li>The trained CNN use it as an input image and makes a prediction.</li>
+                  <li>The predicted result returns to the website for visualization.</li>
+                </ul>
+
+              <br><br>
               </p>
 
               <div class="project-wrapper__text-btns">
                 <a
-                href="https://youtu.be/e06pn4GVS44"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="cta-btn cta-btn--hero cta-btn--projects"
+                  href="https://youtu.be/e06pn4GVS44"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="cta-btn cta-btn--hero cta-btn--projects"
                 >See Video</a>
 
-                <a href="https://github.com/acseker/AnimalRecognitionWebsite.git"
-                   target="_blank"
-                   class="cta-btn text-color-main"
-                  >See Code</a
-                >
+                <a
+                  href="https://github.com/acseker/AnimalRecognitionWebsite.git"
+                  target="_blank"
+                  class="cta-btn text-color-main"
+                >See Code</a>
               </div>
             </div>
 
             <div class="project-wrapper__image">
               <div class="thumbnail rounded">
-                <img src="../assets/p2_fig_2.jpg" class="img-fluid" alt="Project Image"/>
+                <img src="../assets/p2_fig_1.jpg" height="200" class="img-fluid" alt="Project Image"/>
+              </div>
+
+              <br>
+
+              <div class="thumbnail rounded">
+                <img src="../assets/p2_fig_2.jpg" height="200" class="img-fluid" alt="Project Image"/>
               </div>
             </div>
           </article>

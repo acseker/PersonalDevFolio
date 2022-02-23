@@ -1147,3 +1147,9 @@ section .row span {
 }
 /* ---------------- TOOLS END ---------------- */
 
+
+ul.a {
+  list-style-type: disc;
+  list-style-position: inside;
+  text-align: left;
+  font-size: 1.5rem;
