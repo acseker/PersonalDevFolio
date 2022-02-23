@@ -433,10 +433,11 @@ section .row span {
 
 /* ---------------- NAVIGATION TOP BAR ---------------- */
 #navbar {
+  height: 7vh;  /* Adjust navbar height */
+  width: 100%; /* Full width */
   background-color: #333; /* Black background color */
   position: fixed; /* Make it stick/fixed */
   top: -50px; /* Hide the navbar 50 px outside of the top view */
-  width: 100%; /* Full width */
   transition: top 0.3s; /* Transition effect when sliding down (and up) */
   z-index: 999; /* to see navbar in front of everything*/
 }
@@ -465,10 +466,16 @@ section .row span {
   border: none;
   outline: none;
   color: white;
-  padding: 0 0 15px 0;
   background-color: inherit;
   font-family: inherit; /* Important for vertical align on mobile phones */
   margin: 0; /* Important for vertical align on mobile phones */
+}
+
+.dropbtn {
+  color: white;
+  background-color: inherit;
+  font-family: inherit;
+  border: none;
 }
 
 /* Add a white background color to navbar links on hover */
@@ -501,6 +508,7 @@ section .row span {
 /* Add a grey background color to dropdown links on hover */
 .dropdown-content a:hover {
   background-color: white;
+  color:black;
 }
 
 /* Show the dropdown menu on hover */
