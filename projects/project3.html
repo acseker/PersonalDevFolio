@@ -95,14 +95,34 @@ Have fun creating your portfolio on this template!!! -->
 
   <body>
     <!-- Top Navigation Bar Section -->
-    <div id="navbar">
-      <a href="#hero">
-        <img src="../assets/icon.png" height="30px" alt="Icon Image">
-      </a>
-      <div class="navbar-text">
-        <a href="../index.html">Home</a>
-        <a href="#projects">Project</a>
-        <a href="#contact">Contact</a>
+    <div id="bar">
+      <div class="navbar">
+
+        <a href="../index.html#hero">
+          <img src="../assets/icon.png" height="30px" alt="Icon Image">
+        </a>
+
+        <div class="navbar-titles">
+          <a href="../index.html#hero">Home</a>
+          <a href="../index.html#about">About Me</a>
+          <a href="../index.html#skills">Skills</a>
+
+          <div class="dropdown">
+            <button class="dropbtn">
+              Projects <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="project1.html">Understanding Expiration Date</a>
+              <a href="project2.html">Animal Recognition Web Application</a>
+              <a href="#hero">Fruit Recognition Android Application</a>
+              <a href="project4.html">Three-Floor Elevator Prototype</a>
+            </div>
+          </div>
+
+          <a href="../index.html#awards">Awards</a>
+          <a href="../index.html#publications">Publications</a>
+          <a href="../index.html#contact">Contact</a>
+        </div>
       </div>
     </div>
     <!-- /END Top Navigation Bar Section -->
@@ -164,8 +184,7 @@ Have fun creating your portfolio on this template!!! -->
     </div>
     <!-- /END Hero Section -->
 
-
-        <!-- Projects Section-->
+    <!-- Projects Section-->
     <section id="projects">
       <div class="container">
         <div class="project-wrapper">
@@ -331,9 +350,9 @@ Have fun creating your portfolio on this template!!! -->
 
       function scrollFunction() {
         if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-          document.getElementById("navbar").style.top = "0";
+          document.getElementById("bar").style.top = "0";
         } else {
-          document.getElementById("navbar").style.top = "-50px";
+          document.getElementById("bar").style.top = "-50px";
         }
       }
     </script>

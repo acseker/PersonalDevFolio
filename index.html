@@ -95,18 +95,34 @@ Have fun creating your portfolio on this template!!! -->
 
   <body>
     <!-- Top Navigation Bar Section -->
-    <div id="navbar">
-      <a href="#hero">
-        <img src="./assets/icon.png" height="30px" alt="Icon Image">
-      </a>
-      <div class="navbar-text">
-        <a href="#hero">Home</a>
-        <a href="#about">About Me</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#awards">Awards</a>
-        <a href="#publications">Publications</a>
-        <a href="#contact">Contact</a>
+    <div id="bar">
+      <div class="navbar">
+
+        <a href="#hero">
+          <img src="../assets/icon.png" height="30px" alt="Icon Image">
+        </a>
+
+        <div class="navbar-titles">
+          <a href="#hero">Home</a>
+          <a href="#about">About Me</a>
+          <a href="#skills">Skills</a>
+
+          <div class="dropdown">
+            <button class="dropbtn">
+              Projects <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="projects/project1.html">Understanding Expiration Date</a>
+              <a href="projects/project2.html">Animal Recognition Web Application</a>
+              <a href="projects/project3.html">Fruit Recognition Android Application</a>
+              <a href="projects/project4.html">Three-Floor Elevator Prototype</a>
+            </div>
+          </div>
+
+          <a href="#awards">Awards</a>
+          <a href="#publications">Publications</a>
+          <a href="#contact">Contact</a>
+        </div>
       </div>
     </div>
     <!-- /END Top Navigation Bar Section -->
@@ -528,9 +544,9 @@ Have fun creating your portfolio on this template!!! -->
 
       function scrollFunction() {
         if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-          document.getElementById("navbar").style.top = "0";
+          document.getElementById("bar").style.top = "0";
         } else {
-          document.getElementById("navbar").style.top = "-50px";
+          document.getElementById("bar").style.top = "-50px";
         }
       }
     </script>
