@@ -1,89 +1,42 @@
-<h1 align="center"> ⚡️ DevFolio ⚡️</h1>
+<h1 align="center">PersonalDevFolio</h1>
 
-[![Github](https://img.shields.io/github/license/anilseervi/DevFolio?color=%2312c2e9&logo=github&style=for-the-badge)](https://github.com/AnilSeervi/DevFolio/blob/master/README.md) ![Github Stars](https://img.shields.io/github/stars/anilseervi/DevFolio?color=%23c471ed&style=for-the-badge) ![Github forks](https://img.shields.io/github/forks/anilseervi/DevFolio?color=%23f64f59&style=for-the-badge) ![GitHub deployments](https://img.shields.io/github/deployments/anilseervi/DevFolio/github-pages?label=Deploy&logo=github&style=for-the-badge)
+<div align="center">
+adresi degistir
 
-## A Modern Portfolio Template for Developers!
+  ![GitHub deployments](https://img.shields.io/github/deployments/anilseervi/DevFolio/github-pages?label=Deploy&logo=github&style=for-the-badge)
 
-<h2 align="center">
-  <img src="assets/devfolio.gif" alt="Devfolio" width="1905px" />
-</h2>
+</div>
 
-## Features
+This repo is a personal developer portfolio and a modified version of [DevFolio](https://github.com/AnilSeervi/DevFolio).
+If you would like to use this portfolio, please follow the instructions in it.
 
-⚡️ Modern UI Design + Reveal Animations + Hover Effects\
-⚡️ Well organized documentation\
-⚡️ One Page Layout\
-⚡️ Custom SCSS\
-⚡️ Fully Responsive\
-⚡️ Valid HTML5 & CSS3\
-⚡ Fast and SEO Optimized
-
-To view a demo example, **[Click Here](https://devfolio.js.org)**\
-To view a live example, **[Click Here](https://anilseervi.github.io/Portfolio/)**\
-To view live example repo, **[Click Here](https://github.com/AnilSeervi/Portfolio/)**
-
-## Getting Started 🚀
-
-Here's a **Complete Guide** to walk you through the process of setting your own Portfolio Website with this minimal template on your local machine as well as hosting it on GitHub.
-
-### Prerequisites 📋
-
-You'll need [VSCode](https://code.visualstudio.com/) and [Git](https://git-scm.com/) installed on your computer.
-
-You'll also need these two extensions [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) and [Live Sass Compiler](https://marketplace.visualstudio.com/items?itemName=ritwickdey.live-sass) installed in your VSCode.
-
-Press F1 and Search for _Open Settings(JSON)_ and paste the below code before the closing braces( `}` ).
-
-```json
-"liveSassCompile.settings.generateMap": false,
-"liveSassCompile.settings.formats": [
-    {
-      "format": "compressed",
-      "savePath": "/css",
-      "extensionName": ".css"
-    }
-  ],
-"liveSassCompile.settings.excludeList": ["**/node_modules/**", ".vscode/**"],
-
-```
+To view a **[live](https://acseker.github.io/PersonalDevFolio/)** example of PersonalDevFolio.
 
 ---
+## Template Structure
+This portfolio consists of the main and the project pages.
 
-## How To Use 🔧
+The main page consists of the following sections:
+* Hero
+* About
+* Skills
+* Projects
+* Awards
+* Publications
+* Contact
+* Footer
 
-In VSCode, Open the terminal(`Ctrl+`\` ) and clone the DevFolio Repo.
+Project pages consists of the following sections:
+* Hero
+* Projects
+* Tools
+* Contact
+* Footer
 
-```bash
-# Clone this repository
-$ git clone https://github.com/AnilSeervi/DevFolio.git
 
-# Go into the repository
-$ cd DevFolio
-
-# Remove current origin repository
-$ git remote remove origin
-```
-
-And delete the `.github` folder as you don't need it.
-
-Now Simply click on **Watch Sass** and **Go Live** in the Status Bar.
-
-<h3 align="center">
-OR
-</h3>
-
-Press _Ctrl+Shift+P_ or _F1_ to Show Command Palette, Search for **Watch Sass** and turn it on. Also search for **Open With Live Server** and turn it on. Doing this will watch all your Sass files for changes and will open the website in your browser to preview live.
-
----
-
-## Template Instructions
-
-### Step 1 - STRUCTURE
-
-Open `index.html` and fill your information, there are 6 sections:
+Open `index.html` for the main page and fill your information, there are 6 sections:
 
 ### Head Section
-
 - Add a title to your Portfolio website within the `<title>` tag.
 - Add some keywords and description to your Portfolio website as directed in the `index.html` file.
 
@@ -99,7 +52,6 @@ Open `index.html` and fill your information, there are 6 sections:
 - Remove google analytics tag before pushing it to GitHub.
 
 ### Hero Section
-
 - On `.hero-title`, put your custom title.
 - On `.hero-cta`, put your custom button cta.
 
@@ -122,7 +74,6 @@ Open `index.html` and fill your information, there are 6 sections:
 ```
 
 ### About Section
-
 - On `<img>` tag, fill the `src` attribute with your profile picture, your picture must be located inside `assets/` folder.
   - Recommended size for your profile image is (450 x 450px).
 - On `<p>` tag with class-name `.about-wrapper__info-text`, include information about you, I recommend to use 2 paragraphs in order to work well and a maximum of 3 paragraphs.
@@ -154,8 +105,10 @@ Open `index.html` and fill your information, there are 6 sections:
 <!-- /END About Section -->
 ```
 
-### Projects Section
+### Skills Section
 
+
+### Projects Section
 - Each project lives inside `row` class.
 - On `<h3>` tag with class-name `.project-wrapper__text-title`, include your project title.
 - On `<p>` tag with `loremp ipsum` text, include your project information.
@@ -211,8 +164,14 @@ Open `index.html` and fill your information, there are 6 sections:
 <!-- /END Project -->
 ```
 
-### Contact Section
+### Awards Section
 
+### Publications Section
+
+### Tools Section
+
+
+### Contact Section
 - On `<p>` tag with class-name `.contact-wrapper__text`, include some custom call-to-action message.
 - On `<a>` tag, put your email address on `href="mailto:` attribute.
 
@@ -231,7 +190,6 @@ Open `index.html` and fill your information, there are 6 sections:
 ```
 
 ### Footer Section
-
 - Put your social media link on each `<a>` links.
 - If you have more social-media accounts, see [Font Awesome Icons](https://fontawesome.com/v4.7.0/icons/) to put the corresponding additional social icon classNames.
 - You can delete or add as many `a` links your want.
@@ -262,71 +220,6 @@ Open `index.html` and fill your information, there are 6 sections:
 <!-- END Footer Section -->
 ```
 
-### Step 2 - STYLES
 
-Change the color theme of the website ( choose 2 colors to create a gradient ):
 
-Go to `style/base/_variables.scss` and only change the values on these properties `$main-color` and `$secondary-color` to your prefered HEX color.
 
-Save the `.scss` file so that the **Live Sass Compiler** extension compiles it to `.css`.
-
-```scss
-// Default values
-$primary-color: #36d1dc;
-$secondary-color: #5b86e5;
-```
-
-**NOTE**: I highly recommend to checkout gradients variations on [UI Gradient](https://uigradients.com/#Scooter)
-
----
-
-- You can clear the README.md file and add you own readme to it.
-- Also you don't need to push the `style` folder, so you can add `style` to `.gitignore` file to ignore it while pushing it to the repo.
-- Delete the file `CNAME` before you push it.
-
----
-
-## Deployment 📦
-
-- Head to your GitHub account and create a new repo. And set a new remote for our template repo.
-
-  Note: remote URL will be different.
-
-  ```bash
-  # set a new remote
-  $ git remote add origin https://github.com/user.repo.git
-  ```
-
-- Now commit all your changes with a commit message and push the code to your newly created repo.
-
-  ```bash
-  # commit changes
-  $ git commit -m 'created my portfolio'
-  # push the changes
-  $ git push -u origin master
-  ```
-
-- Refresh your repo page and head to the settings tab. Now scroll down till you see GitHub Pages. In the Source section select the branch to be master and save it!
-- Voilà your Portfolio should be live at `https://username.github.io/repoName/`
-
-## Technologies used 🛠️
-
-- [Sass](https://sass-lang.com/documentation) - CSS extension language
-- [ScrollReveal.js](https://scrollrevealjs.org/) - JavaScript library
-- [Tilt.js](https://gijsroge.github.io/tilt.js/) - JavaScript tiny parallax library
-
-## Authors
-
-- **Anil Seervi** - [https://github.com/AnilSeervi](https://github.com/AnilSeervi)
-
-## License 📄
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## Acknowledgments 🎁
-
-I was motivated and inspired while learning [ZTM: Complete Web Developer](https://www.udemy.com/course/the-complete-web-developer-zero-to-mastery/) to create a simpler version of [simplefolio](https://github.com/cobidev/simplefolio) for those who didn't know node and packages.
-
----
-
-<h2 align="center">Have Fun Creating Your Own Portfolio Website.</h2>
