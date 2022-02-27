@@ -50,6 +50,10 @@
         align-items: center;
         text-align: justify;
       }
+      @include respond(phone) {
+        align-items: center;
+        text-align: justify;
+      }
     }
   }
 }
