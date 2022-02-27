@@ -1,4 +1,4 @@
-#awards {
+#tools {
   background-color: $light-white;
   color: $dark-blue-text;
   margin-top: -15rem;
@@ -10,7 +10,7 @@
   @include respond(phone) {
     padding-bottom: 1px;
   }
-  .awards-wrapper {
+  .tools-wrapper {
     margin-bottom: 15rem;
     @include respond(phone) {
       margin-bottom: 0rem;
@@ -44,6 +44,8 @@
       &-info {
         margin-bottom: 1.5rem;
       }
+
     }
+
   }
 }
