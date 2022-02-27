@@ -1,40 +1,34 @@
 <h1 align="center">PersonalDevFolio</h1>
 
 <div align="center">
-adresi degistir
 
-  ![GitHub deployments](https://img.shields.io/github/deployments/anilseervi/DevFolio/github-pages?label=Deploy&logo=github&style=for-the-badge)
+
+  ![GitHub deployments](https://img.shields.io/github/deployments/acseker/PersonalDevFolio/github-pages?label=Deploy&logo=github&style=for-the-badge)
 
 </div>
 
-This repo is a personal developer portfolio and a modified version of [DevFolio](https://github.com/AnilSeervi/DevFolio).
+This repo is a personal developer portfolio and a modified version of [DevFolio](https://github.com/AnilSeervi/DevFolio) repo.
 If you would like to use this portfolio, please follow the instructions in it.
 
 To view a **[live](https://acseker.github.io/PersonalDevFolio/)** example of PersonalDevFolio.
 
 ---
 ## Template Structure
-This portfolio consists of the main and the project pages.
+This portfolio consists of `index.html`, `projectX.html` files in `projects` folder
+and `main.css` file in `css` folder.
 
-The main page consists of the following sections:
+The `.html` files consist of the following sections:
+* Head
 * Hero
 * About
 * Skills
 * Projects
+* Tools
 * Awards
 * Publications
 * Contact
 * Footer
 
-Project pages consists of the following sections:
-* Hero
-* Projects
-* Tools
-* Contact
-* Footer
-
-
-Open `index.html` for the main page and fill your information, there are 6 sections:
 
 ### Head Section
 - Add a title to your Portfolio website within the `<title>` tag.
@@ -49,7 +43,6 @@ Open `index.html` for the main page and fill your information, there are 6 secti
 <meta name="description" content="[Your name here] | Developer" />
 ```
 
-- Remove google analytics tag before pushing it to GitHub.
 
 ### Hero Section
 - On `.hero-title`, put your custom title.
