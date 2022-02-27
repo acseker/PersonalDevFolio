@@ -19,6 +19,7 @@ and `main.css` file in `css` folder.
 
 The `.html` files consist of the following sections:
 * Head
+* Bar
 * Hero
 * About
 * Skills
@@ -44,27 +45,109 @@ The `.html` files consist of the following sections:
 ```
 
 
-### Hero Section
-- On `.hero-title`, put your custom title.
-- On `.hero-cta`, put your custom button cta.
+### Bar Section
+* On `.dropdown-content`, put your custom project name.
 
 ```html
-<!-- Hero Section -->
-<div id="hero">
-  <section class="container">
-    <h1 class="hero-title">
-      Hi, my name is <span class="text-color-main name">Your Name</span>
-      <br />
-      I'm the Unknown Developer.
-    </h1>
-    <p class="hero-cta">
-      <a class="cta-btn cta-btn--hero" href="#about">Get in touch</a>
-    </p>
-  </section>
-  <a href="#about" class="scroll-down-link"> <div class="scroll-down"></div></a>
-</div>
-<!-- /END Hero Section -->
+  <!-- Top Navigation Bar Section -->
+  <div id="bar">
+    <div class="navbar">
+  
+      <a href="#hero">
+        <img src="../assets/icon.png" height="20px" alt="Icon Image">
+      </a>
+  
+      <div class="navbar-titles">
+        <a href="#hero">Home</a>
+        <a href="#about">About Me</a>
+        <a href="#skills">Skills</a>
+  
+        <div class="dropdown">
+          <button class="dropbtn">
+            Projects <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="projects/project1.html">Project Name</a>
+            <a href="projects/project2.html">Project Name</a>
+            <a href="projects/project3.html">Project Name</a>
+            <a href="projects/project4.html">Project Name</a>
+          </div>
+        </div>
+  
+        <a href="#awards">Awards</a>
+        <a href="#publications">Publications</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </div>
+  <!-- /END Top Navigation Bar Section -->
 ```
+
+
+### Hero Section
+- On `.hero-title`, put your custom title.
+- On `.hero-subtitle`, put your custom subtitles.
+- On `social-links`, put your social link url on `href` attribute   
+
+```html
+    <!-- Hero Section -->
+    <div id="hero">
+      <section class="container">
+        <h1 class="hero-title">
+          Hi! <br> I'm Ahmet Cagatay Seker
+        </h1>
+
+        <h1 class="hero-subtitle">
+           Ph.D. Candidate | Junior ML Developer | Research Assistant
+        </h1>
+        <br>
+
+        <div class="social-links">
+          <a
+            href="mailto:acseker07@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="email"
+          >
+            <span class="fa-stack" style="vertical-align: top;">
+              <i class="fa fa-circle fa-stack-2x" style="color:#ea4335"></i>
+              <i class="fa fa-envelope fa-stack-1x"></i>
+            </span>
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/acseker/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="linkedin"
+          >
+            <span class="fa-stack" style="vertical-align: top;">
+              <i class="fa fa-circle fa-stack-2x" style="color:#4875b4"></i>
+              <i class="fa fa-linkedin fa-stack-1x"></i>
+            </span>
+          </a>
+
+          <a
+            href="https://github.com/acseker"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="github"
+          >
+            <span class="fa-stack" style="vertical-align: top;">
+              <i class="fa fa-circle fa-stack-2x" style="color:#000"></i>
+              <i class="fa fa-github fa-stack-1x"></i>
+            </span>
+          </a>
+        </div>
+      </section>
+
+      <a href="#about" class="scroll-down-link" aria-label="scroll-down">
+        <div class="scroll-down"></div>
+      </a>
+    </div>
+    <!-- /END Hero Section -->
+```
+
 
 ### About Section
 - On `<img>` tag, fill the `src` attribute with your profile picture, your picture must be located inside `assets/` folder.
@@ -98,7 +181,39 @@ The `.html` files consist of the following sections:
 <!-- /END About Section -->
 ```
 
+
 ### Skills Section
+- On `<img>` tag, fill the `src` attribute with your skill picture.
+
+```html
+<!-- Skills Section -->
+<section id="skills">
+  <div class="container">
+    <div class="skills-wrapper">
+      <h2 class="section-title dark-blue-text">Skills</h2>
+        <div class="skills-wrapper__text">
+          <div style="padding-left:25px">
+            <img src="./assets/python.png" height="64px"/>
+            <h6>Python</h6>
+          </div>
+          <div style="padding-left:25px">
+            <img src="./assets/c++.png" height="64px"/>
+            <h6>C++</h6>
+          </div>
+          <div style="padding-left:25px">
+            <img src="./assets/html.png" height="64px"/>
+            <h6>HTML</h6>
+          </div>
+          <div style="padding-left:25px">
+            <img src="./assets/css.png" height="64px"/>
+            <h6>CSS</h6>
+          </div>
+        </div>
+      </div>
+  </div>
+</section>
+<!-- /END Skill Section -->
+```
 
 
 ### Projects Section
@@ -107,12 +222,11 @@ The `.html` files consist of the following sections:
 - On `<p>` tag with `loremp ipsum` text, include your project information.
 - On first `<a>` tag, put your project url on `href` attribute.
 - On second `<a>` tag, put your project repository url on `href` attribute.
-
----
-
-- Inside `<div>` tag with class-name `.project-wrapper__image`, put your project image url on the `src` of the `<img>` and put again your project url on `href` attribute of `<a>` tag.
-- Recommended size for project image (1366 x 767px), your project image must live in `assets/` folder. You can remove the default images and replace them with yours.
-
+- Inside `<div>` tag with class-name `.project-wrapper__image`, 
+  - put your project image url on the `src` of the `<img>` 
+  - put again your project url on `href` attribute of `<a>` tag.
+- Recommended size for project image (1366 x 767px), your project image must live in `assets/` folder. 
+- 
 ```html
 <!--Projects Section-->
     <section id="projects">
@@ -157,16 +271,87 @@ The `.html` files consist of the following sections:
 <!-- /END Project -->
 ```
 
+
+### Tools
+- On `<img>` tag, fill the `src` attribute with your skill picture.
+
+```html
+<!-- tools Section -->
+<section id="tools">
+  <div class="container">
+    <div class="tools-wrapper">
+      <h2 class="section-title dark-blue-text">Tools</h2>
+        <div class="tools-wrapper__text">
+          <div style="padding-left:25px">
+            <img src="../assets/python.png" height="64px"/>
+            <h6>Python</h6>
+          </div>
+          <div style="padding-left:25px">
+            <img src="../assets/pytorch.png" height="64px"/>
+            <h6>PyTorch</h6>
+          </div>
+          <div style="padding-left:25px">
+            <img src="../assets/opencv.png" height="64px"/>
+            <h6>OpenCV</h6>
+          </div>              
+        </div>
+      </div>
+    </div>
+</section>
+<!-- /END Skill Section -->
+```
+
+
 ### Awards Section
+- On `<h3>` tag with class-name `.project-wrapper__text-title`, include your project title.
+- On `<p>` tag with the text, include your awards information.
+
+```html
+<!-- Awards Section -->
+<section id="awards">
+  <div class="container">
+    <div class="awards-wrapper">
+      <h2 class="section-title dark-blue-text">Awards</h2>
+      <div class="awards-wrapper__text">
+        <p class="awards-wrapper__text-info">
+          🏆 Graduated as the highest ranked student
+          in the Faculty of Engineering at Mevlana University in Jun 2015.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /END Awards Section -->
+```
+
 
 ### Publications Section
+- On `<h3>` tag with class-name `.project-wrapper__text-title`, include your project title.
+- On `<p>` tag with the text, include your awards information.
 
-### Tools Section
+```html
+<!-- Publications Section -->
+<section id="publications">
+  <div class="container">
+    <div class="publications-wrapper">
+      <h2 class="section-title dark-blue-text">Publications</h2>
+      <div class="publications-wrapper__text">
+        <p class="publications-wrapper__text-info">
+          📃 A Generalized Framework for Recognition of Expiration Date on Product Packages Using Fully Convolutional Networks
+          <br>
+          Seker, Ahmet Cagatay and Ahn, Sang Chul
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /END Publications Section -->
+```
 
 
 ### Contact Section
 - On `<p>` tag with class-name `.contact-wrapper__text`, include some custom call-to-action message.
-- On `<a>` tag, put your email address on `href="mailto:` attribute.
+- On `<a>` tag, put your email address on `action="your-mail-address` attribute.
 
 ```html
 <!-- Contact Section -->
@@ -174,13 +359,20 @@ The `.html` files consist of the following sections:
   <div class="container">
     <h2 class="section-title">Contact</h2>
     <div class="contact-wrapper">
-      <p class="contact-wrapper__text">[Put your call to action here]</p>
-      <a href="mailto:" class="cta-btn cta-btn--resume">Call to Action</a>
+      <div id="contact-form">
+        <form method="POST" action="https://formspree.io/acseker07@gmail.com">
+            <input type="hidden" name="_subject" value="Contact request from personal website">
+            <input type="email" name="_replyto" placeholder="Your email" required="">
+            <textarea name="message" placeholder="Your message" required="" data-gramm="false" wt-ignore-input="true"></textarea>
+            <button class="cta-btn cta-btn--resume" type="submit">Submit</button>
+        </form>
+      </div>
     </div>
   </div>
 </section>
 <!-- END Contact Section -->
 ```
+
 
 ### Footer Section
 - Put your social media link on each `<a>` links.
@@ -192,14 +384,6 @@ The `.html` files consist of the following sections:
 <footer class="footer">
   ...
   <div class="social-links">
-    <a href="#!" target="_blank">
-      <i class="fa fa-twitter"></i>
-    </a>
-    <a href="#!" target="_blank">
-      <i class="fa fa-instagram"></i>
-    </a>
-    <a href="#!" target="_blank">
-      <i class="fa fa-codepen"></i>
     </a>
     <a href="#!" target="_blank">
       <i class="fa fa-linkedin"></i>
@@ -212,6 +396,7 @@ The `.html` files consist of the following sections:
 </footer>
 <!-- END Footer Section -->
 ```
+
 
 
 
