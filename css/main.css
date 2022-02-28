@@ -533,13 +533,13 @@ section .row span {
     height: 100vh;
     display: flex;
     align-items: center;
-    background-image: url("https://images.pexels.com/photos/747964/pexels-photo-747964.jpeg?cs=srgb&dl=pexels-s-migaj-747964.jpg&fm=jpg");
+    background-image: url("https://images.pexels.com/photos/1714208/pexels-photo-1714208.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
     background-repeat:no-repeat;
     background-size: 100% 100%;
     max-width: 100vw;
     max-height: 100vh;
     font-weight: 400;
-    color: #272341;
+    color: #ffecd1;
     padding: 0rem 5.6rem;
     top: 0;
     left: 0;
