@@ -1,0 +1,36 @@
+#bar {
+  position: fixed; /* Make it stick/fixed */
+  top: -50px; /* Hide the navbar 50 px outside of the top view */
+  width: 100%; /* Full width */
+  transition: top 0.3s; /* Transition effect when sliding down (and up) */
+  z-index: 999;
+
+  @include respond(tab-port) {
+    justify-content: center;
+  }
+  @include respond(phone) {
+    justify-content: center;
+    padding: 0rem $default-font-size;
+  }
+
+  .navbar-titles {
+    text-align: center;
+    display : flex;
+    justify-content: center;
+
+    @include respond(tab-land) {
+      font-size: 4rem;
+    }
+    @include respond(tab-port) {
+      font-size: 3.6rem;
+      text-align: center;
+    }
+    @include respond(phone) {
+      font-size: 3.5rem;
+      line-height: 1.5;
+    }
+    @include respond(phone-xs) {
+      font-size: 2.8rem;
+    }
+  }
+}
